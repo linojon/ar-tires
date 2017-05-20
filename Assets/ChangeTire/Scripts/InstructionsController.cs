@@ -13,6 +13,9 @@ public class InstructionsController : MonoBehaviour {
     //public Text titleText;
     //public Text bodyText;
 
+    public GameObject ImageGraphic;
+    public GameObject VideoGraphic;
+
     private int currentStep;
     private InstructionModel currentInstructionModel = new InstructionModel();
 
@@ -49,6 +52,11 @@ public class InstructionsController : MonoBehaviour {
     }
 
     private void CurrentInstructionUpdate() {
+        // ui hack
+        ImageGraphic.SetActive(true);
+        VideoGraphic.SetActive(true); 
+        
+
         InstructionStep step = currentInstructionModel.GetInstructionStep(currentStep);
         OnInstructionUpdate.Invoke(step);
     }
