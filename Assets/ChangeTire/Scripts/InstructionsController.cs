@@ -13,6 +13,8 @@ public class InstructionsController : MonoBehaviour {
     //public Text titleText;
     //public Text bodyText;
 
+    public GameObject StandardContent;
+
     public GameObject ImageGraphic;
     public GameObject VideoGraphic;
 
@@ -33,6 +35,7 @@ public class InstructionsController : MonoBehaviour {
     }
 
     void Start () {
+        Debug.Log("STEP COUNT: " + currentInstructionModel.GetCount());
         currentStep = 0;
         CurrentInstructionUpdate();
     }
@@ -53,11 +56,13 @@ public class InstructionsController : MonoBehaviour {
 
     private void CurrentInstructionUpdate() {
         // ui hack
-        ImageGraphic.SetActive(true);
-        VideoGraphic.SetActive(true); 
+        //ImageGraphic.SetActive(true);
+        //VideoGraphic.SetActive(true); 
         
 
         InstructionStep step = currentInstructionModel.GetInstructionStep(currentStep);
+        Debug.Log("STEP " + step.Name + ": " + step.Title);
+
         OnInstructionUpdate.Invoke(step);
     }
 }

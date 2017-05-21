@@ -5,10 +5,11 @@ using UnityEngine.UI;
 public class ImageGraphic : InstructionElement {
     protected override void InstructionUpdate(InstructionStep step) {
         if (!string.IsNullOrEmpty(step.ImageName)) {
+            GetComponent<LayoutElement>().enabled = true;
             GetComponent<RawImage>().texture = Resources.Load(step.ImageName) as Texture;
         } else {
             GetComponent<RawImage>().texture = null;
-            gameObject.SetActive(false);
+            GetComponent<LayoutElement>().enabled = false;
         }
     }
 }

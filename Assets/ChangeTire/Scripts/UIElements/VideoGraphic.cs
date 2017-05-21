@@ -8,12 +8,15 @@ public class VideoGraphic : InstructionElement {
 
     protected override void InstructionUpdate(InstructionStep step) {
         if (!string.IsNullOrEmpty(step.VideoName)) {
+            GetComponent<LayoutElement>().enabled = true;
             videoPlayer.clip = Resources.Load(step.VideoName) as VideoClip;
+            GetComponent<RawImage>().SetNativeSize();
             videoPlayer.Play();
 
         } else {
             videoPlayer.Stop();
-            gameObject.SetActive(false);
+            GetComponent<LayoutElement>().enabled = false;
+
         }
     }
 }
