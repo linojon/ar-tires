@@ -11,7 +11,7 @@ public class InstructionsController : MonoBehaviour {
     public InstructionEvent OnInstructionUpdate = new InstructionEvent();
     public UserDefinedTargetBuildingBehaviour UserDefinedTargetBuilder;
     public GameObject StandardContent;
-    public GameObject ARPrompt;
+
 
     private int currentStep;
     private bool arMode;
@@ -67,14 +67,14 @@ public class InstructionsController : MonoBehaviour {
     {
         UserDefinedTargetBuilder.StartScanning();
         StandardContent.SetActive(false);
-        ARPrompt.SetActive(true);
+  
     }
 
     void TurnOffArMode()
     {
         UserDefinedTargetBuilder.StopScanning();
         StandardContent.SetActive(true);
-        ARPrompt.SetActive(false);
+
     }
 
     private void CurrentInstructionUpdate() {

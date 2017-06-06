@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Vuforia;
 
 [RequireComponent(typeof(TrackableBehaviour))]
 public class TrackableObjectVisibility : MonoBehaviour, ITrackableEventHandler {
 
-    public GameObject Target;
-    public bool ShowOnFound = true;
+    public UnityEvent OnTargetFound;
+    public UnityEvent OnTargetLost;
 
     private TrackableBehaviour trackableBehaviour;
 
@@ -19,21 +20,10 @@ public class TrackableObjectVisibility : MonoBehaviour, ITrackableEventHandler {
 
     public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus) {
         if (newStatus == TrackableBehaviour.Status.DETECTED || newStatus == TrackableBehaviour.Status.TRACKED || newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED) {
-            OnTargetFound();
+           OnTargetFound.Invoke();
         } else {
-            OnTargetLost();
+          OnTargetLost.Invoke();
         }
     }
 
-    void OnTargetFound() {
-        if (Target) {
-            Target.SetActive(ShowOnFound);
-        }
-    }
-
-    void OnTargetLost() {
-        if (Target) {
-            Target.SetActive(!ShowOnFound);
-        }
-    }
 }

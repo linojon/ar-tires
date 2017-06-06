@@ -10,8 +10,8 @@ public class VideoGraphic : InstructionElement {
       
         if (!string.IsNullOrEmpty(step.VideoName)) {
             GetComponent<LayoutElement>().enabled = true;
-            videoPlayer.clip = Resources.Load(step.VideoName+".mp4") as VideoClip;
-            print(step.VideoName + ".mp4");
+            videoPlayer.clip = Resources.Load(step.VideoName) as VideoClip;
+
             GetComponent<RawImage>().SetNativeSize();
             videoPlayer.Play();
 
