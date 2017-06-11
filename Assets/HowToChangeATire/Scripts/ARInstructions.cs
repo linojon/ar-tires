@@ -3,20 +3,32 @@ using UnityEngine;
 
 public class ARInstructions : InstructionElement
 {
-
-    public GameObject[] AugmentedGameObjects;
+    private GameObject lastAugment;
+ 
 
     protected override void InstructionUpdate(InstructionStep step)
     {
-        //Parses int from string
-        int stepNumber = 0;
-        int.TryParse(step.Name, out stepNumber);
 
-        for (int i = 0; i < AugmentedGameObjects.Length; i++)
+        DisableLastObject();
+        FindChildByTitle(step.Title);
+    }
+
+   private void DisableLastObject()
+    {
+        if (lastAugment != null)
         {
-            bool isCurrentStep =( i == stepNumber);
-            if(AugmentedGameObjects[i] != null)
-            AugmentedGameObjects[i].SetActive(isCurrentStep);
+            lastAugment.SetActive(false);
+            lastAugment = null;
         }
+    }
+
+    private void FindChildByTitle(string title)
+    {
+        Transform childTransform = transform.FindChild(title);
+        if (lastAugment)
+        {
+            lastAugment = childTransform.gameObject;
+        }
+
     }
 }
