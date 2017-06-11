@@ -8,9 +8,14 @@ public class ARInstructions : InstructionElement
 
     protected override void InstructionUpdate(InstructionStep step)
     {
-
+    
+    
+ 
         DisableLastObject();
-        FindChildByTitle(step.Title);
+        SetChildActiveByTitle(step.Title);
+      
+
+
     }
 
    private void DisableLastObject()
@@ -22,12 +27,16 @@ public class ARInstructions : InstructionElement
         }
     }
 
-    private void FindChildByTitle(string title)
+    private void SetChildActiveByTitle(string title)
     {
-        Transform childTransform = transform.FindChild(title);
-        if (lastAugment)
+        Transform[] childObjects = GetComponentsInChildren<Transform>(true);
+        for (int i = 0; i < childObjects.Length; i++)
         {
-            lastAugment = childTransform.gameObject;
+            if (childObjects[i].name == title)
+            {
+                lastAugment = childObjects[i].gameObject;
+                lastAugment.SetActive(true);
+            }
         }
 
     }

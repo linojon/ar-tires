@@ -75,6 +75,7 @@ public class InstructionsController : MonoBehaviour {
         UserDefinedTargetBuilder.StopScanning();
         StandardContent.SetActive(true);
 
+
     }
 
     private void CurrentInstructionUpdate() {

@@ -138,7 +138,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1537953778}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1198,34 +1198,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &460181303
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 460181304}
-  m_Layer: 0
-  m_Name: Step (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &460181304
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 460181303}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 667308330}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &478523142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,7 +1548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 630907350}
   m_Layer: 0
-  m_Name: Step (9)
+  m_Name: Remove the tire.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1594,7 +1566,7 @@ Transform:
   m_Children:
   - {fileID: 913904572}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &652917502
 GameObject:
@@ -1667,12 +1639,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1191258312}
   - {fileID: 1993168008}
-  - {fileID: 1224445730}
   - {fileID: 777033351}
-  - {fileID: 1136963901}
-  - {fileID: 460181304}
   - {fileID: 1770721179}
   - {fileID: 2073706520}
   - {fileID: 1788235003}
@@ -1681,7 +1649,6 @@ Transform:
   - {fileID: 1899762740}
   - {fileID: 1225837159}
   - {fileID: 1749146872}
-  - {fileID: 1727694285}
   m_Father: {fileID: 1634996508}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1705,7 +1672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 777033351}
   m_Layer: 0
-  m_Name: Step (3)
+  m_Name: Block other tires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1724,7 +1691,7 @@ Transform:
   - {fileID: 1538387633}
   - {fileID: 1794624428}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &848272841
 GameObject:
@@ -2237,7 +2204,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0.092}
   m_LocalScale: {x: 0.0039351224, y: 0.003935126, z: 0.003935126}
   m_Children:
-  - {fileID: 1643622030}
   - {fileID: 1537953778}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2803,34 +2769,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: edccc7d65afdd1b4986c6d0291c74f66, type: 3}
   m_PrefabInternal: {fileID: 1116616857}
---- !u!1 &1136963900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1136963901}
-  m_Layer: 0
-  m_Name: Step (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1136963901
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1136963900}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 667308330}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1138371389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,7 +2778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138371390}
   m_Layer: 0
-  m_Name: Step (10)
+  m_Name: Place the spare tire on the hub.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2858,7 +2796,7 @@ Transform:
   m_Children:
   - {fileID: 2026517538}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1160119653
 GameObject:
@@ -2951,7 +2889,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1537953778}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3010,34 +2948,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1161413194}
---- !u!1 &1191258311
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1191258312}
-  m_Layer: 0
-  m_Name: Step (0)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1191258312
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191258311}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 667308330}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1209337416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3120,34 +3030,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1209337416}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1224445729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1224445730}
-  m_Layer: 0
-  m_Name: Step (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1224445730
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1224445729}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 667308330}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225837158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,7 +3039,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1225837159}
   m_Layer: 0
-  m_Name: Step (12)
+  m_Name: Lower the car without applying full weight on the tire.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3175,7 +3057,7 @@ Transform:
   m_Children:
   - {fileID: 388981254}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1261672238
 Prefab:
@@ -3705,7 +3587,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1537953778}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3960,8 +3842,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1736634246}
   m_HandleRect: {fileID: 1736634245}
   m_Direction: 0
-  m_Value: 0.25
-  m_Size: 0.9999999
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4371,16 +4253,17 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2002485, y: 0.20024848, z: 0.20024848}
   m_Children:
+  - {fileID: 1643622030}
   - {fileID: 1351347257}
   - {fileID: 5057469}
   - {fileID: 1654933293}
   - {fileID: 1161413195}
   m_Father: {fileID: 955984862}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 56}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -44}
   m_SizeDelta: {x: 437, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1537953779
@@ -4723,18 +4606,18 @@ RectTransform:
   m_GameObject: {fileID: 1643622029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2002485, y: 0.20024858, z: 0.20024858}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 593284655}
   - {fileID: 1318128374}
   - {fileID: 1809531074}
-  m_Father: {fileID: 955984862}
+  m_Father: {fileID: 1537953778}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 50.317055}
-  m_SizeDelta: {x: 437, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1643622031
 MonoBehaviour:
@@ -4747,11 +4630,11 @@ MonoBehaviour:
   m_Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreLayout: 1
+  m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
   m_PreferredWidth: -1
-  m_PreferredHeight: -1
+  m_PreferredHeight: 50
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
 --- !u!114 &1643622032
@@ -4899,7 +4782,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1537953778}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5049,8 +4932,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2035478897}
   m_HandleRect: {fileID: 2035478896}
   m_Direction: 2
-  m_Value: 0.99999976
-  m_Size: 0.7014767
+  m_Value: 1
+  m_Size: 0.6839579
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5240,34 +5123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!1 &1727694284
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1727694285}
-  m_Layer: 0
-  m_Name: Step (14)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1727694285
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1727694284}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 667308330}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1736634244
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,7 +5200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1749146872}
   m_Layer: 0
-  m_Name: Step (13)
+  m_Name: Lower the car to the ground fully and remove the jack.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5365,7 +5220,7 @@ Transform:
   - {fileID: 1116616858}
   - {fileID: 54259562}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770721178
 GameObject:
@@ -5376,7 +5231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1770721179}
   m_Layer: 0
-  m_Name: Step (6)
+  m_Name: ' Remove the hubcap and loosen the nuts by turning counterclockwise.'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5394,7 +5249,7 @@ Transform:
   m_Children:
   - {fileID: 1393390373}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1787121325
 GameObject:
@@ -5479,7 +5334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788235003}
   m_Layer: 0
-  m_Name: Step (8)
+  m_Name: Remove the nuts the rest of the way.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5497,7 +5352,7 @@ Transform:
   m_Children:
   - {fileID: 1521115196}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794624427
 GameObject:
@@ -5711,7 +5566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899762740}
   m_Layer: 0
-  m_Name: Step (11)
+  m_Name: Tighten the nuts by hand until they are all snug.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5729,7 +5584,7 @@ Transform:
   m_Children:
   - {fileID: 1261672239}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1960936377
 GameObject:
@@ -5907,7 +5762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1993168008}
   m_Layer: 0
-  m_Name: Step (1)
+  m_Name: Find a flat, stable and safe place to change your tire.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5927,7 +5782,7 @@ Transform:
   - {fileID: 1209337417}
   - {fileID: 478523143}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2013578237
 GameObject:
@@ -6213,7 +6068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2073706520}
   m_Layer: 0
-  m_Name: Step (7)
+  m_Name: 'Pump or crank the jack to lift the tire off the ground. '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6233,5 +6088,5 @@ Transform:
   - {fileID: 607473685}
   - {fileID: 225908392}
   m_Father: {fileID: 667308330}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
